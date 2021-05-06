@@ -1,0 +1,144 @@
+ls -- will give you the list what we are having.
+
+ls --help -- will give you all the details abou ls how can we use it.
+
+clear -- will clear the screen.
+
+quit --  will quit from the screen.
+
+ls -l -h -- will show the file information reg size and permissions.
+---------------------------------------------------------------------------------------------------------------------
+
+touch practice.txt  -- will create a new text file.
+
+cat README-cloudshell.txt  -- will print the data of the file.
+
+echo "Welcome Manoj"  -- will print the string in the terminal.
+
+echo "Welcome Manoj" > practice.txt  -- will enter the data to the practice.txt.
+
+mv practice.txt exam.txt  -- rename from source to destination.
+
+cp exam.txt practice.txt  -- copies from source to destination.
+
+rm exam.txt  -- deletes the file from list.
+
+ls -a  -- will shows the files including the hidden files with sensitive info.
+
+pwd  -- will print the current location where we are in.
+
+cd ./manoj  -- changes the current to desired directory.
+
+cd / -- will move to the root folder
+
+cd ~ -- will move to our folder
+
+whoami -- will tell your id for working.
+
+rm -r notes -- will remove the dict.
+
+------------------------------------------------------------------------------------------------------------------
+
+nano manoj.txt -- to go to a editor
+
+ctrl+o to save the file and click enter
+
+ctrl+x to exit from editior
+
+
+head -1 manoj.txt -- will print first line of file and by default it will print 10 lines
+
+tail -1 manoj.txt-- will print last line of file and by default it will print 10 lines from last
+
+wc manoj.txt -- will print 2 6 32 manoj.txt(line word char count)
+
+cat manoj.txt | head -1 -- | is called pipe it will provide first command o/p as 2nd command i/p
+
+cat manoj.txt | grep "m" -- will search for the word "m" in the file.
+
+cat manoj.txt | grep "m" > newfile.txt -- will send the o/p to the new file.
+
+tar -czvf my-collections.tar.gz manoj manoj.txt -- will tar a file to compression
+
+tar -xzvf my-collections.tar.gz -C collection -- will uncompressed a file
+
+zip -r manoj.zip manoj manoj.txt -- will zip a file
+
+unzip manoj.zip -d newunzip -- will unzip a file
+-------------------------------------------------------------------------------------------------------------------------
+
+sudo command -- to run 
+
+which sudo -- to know where the command is here command is sudo
+
+sudo useradd mano -- adds the user.
+
+sudo passwd mano -- to set the password for the user.
+
+su -c ls mano -- is used to login with other user name.
+
+chmod 777 manoj.txt -- will change the permissions(chmod - changemode).
+
+sudo chown root manoj.txt -- change the ownership.
+
+sudo chown root:root manoj.txt -- user group ownership change
+
+dr--r--r-- -- dict user,group,other permissions
+-r--r--r-- -- dict user,group,other permissions
+
+0 000 --- no permissions
+1 001 --x Execute
+2 010 -w- write
+3 011 -wx Execute write
+4 100 r-- Read
+5 101 r-x Read Execute
+6 110 rw- Read write
+7 111 rwx Read write Execute
+
+sudo apt -- apt-advanced packaging tool install, update or remove.
+
+sudo apt install wget
+
+sudo apt install curl
+
+wget "https://www.computerhope.com/unix/uchmod.htm#:~:text=permissions%20defines%20the%20permissions%20for,the%20digits%200%20through%207)." -- when we use wget command this will download the page.
+
+curl "wttr.in" -- will print the data in the terminal
+
+sudo apt-cache search google -- will search the data of packages consisting of google.
+
+sudo apt upgrade -- will upgrade the packages in the repository to the latest version
+
+sudo apt update -- will update all the packages
+
+sudo add-apt-repository repository-link -- will install respository to the system from third party
+
+sudo apt-key add - key_id -- used to intall securely
+
+sudo apt remove package_name -- to remove package
+----------------------------------------------------------------------------------------------------------------------
+
+ping google.com -- will let you know the connection (ctrl-c fo closing conn)
+
+traceroute google.com -- will trace the route how is it going
+
+ifconfig -- to know the configurations
+
+env - to know the environment variables
+
+export custom_env_var=10  -- to change the custom_env_var to a value or name we will do it
+env | grep custom_env_var
+
+echo $variable_name -- will print the variable_name in the terminal
+
+unset custom_env_var  -- to delete a variable we will use unset
+env | grep custom_env_var
+
+alias t=traceroute -- for giving alias name to traceroute
+t google.com
+
+unalias t -- to unalias the thing
+
+nano .bashrc -- to give the values and alias permenantly
+
+echo $PATH -- will give you the executable files
